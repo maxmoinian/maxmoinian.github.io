@@ -91,9 +91,10 @@ a:hover .site-title{
 .main{
 	margin-top:75px;
 }
-.main img{
-	padding-bottom:30px;
+.main iframe{
+	margin-bottom:30px;
 }
+
 /*TIMELINE*/
 .timeline-container img{
 	height:calc(100vh - 75px);
