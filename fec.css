@@ -109,6 +109,10 @@ a:hover .site-title{
 .main .issuuembed{
 	margin-bottom:30px;
 }
+.book-divider{
+	border:none;
+	margin:50px 0px;
+}
 
 /*TIMELINE*/
 .timeline-container img{
