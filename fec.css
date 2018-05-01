@@ -37,6 +37,7 @@ a:hover{
 	height:75px;
 	width:100%;
 	padding:20px;
+	z-index:100;
 }
 .site-title{
 	display:inline;
