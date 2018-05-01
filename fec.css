@@ -1,3 +1,11 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /*ENTER*/
 .home-container{
 	width:100%;
@@ -95,6 +103,12 @@ a:hover .site-title{
 
 /*FOOTER*/
 footer{
-	margin-top: 50px
+	flex-shrink: 0;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+
 }
 
