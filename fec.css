@@ -54,26 +54,41 @@ h1,h2,h3,h4{
 	background:#fff;
 	height:75px;
 	width:100%;
-	padding:20px;
+	padding:20px 0px;
 	z-index:100;
 }
-.site-title{
-	display:inline;
-	font-size: 20px;
+.nav{
+	float:right;
 }
 a .site-title{
 		color:#333;
 
 }
+
 a:hover .site-title{
 	color:#666;
 }
-.nav{
-	float:right;
+
+.header h1.site-title, .header .nav h3{
+	font-size: 16px !important;
+}
+.site-title, .header .nav h3{
+	display:inline-block;
+	vertical-align: top;
 }
 .nav h3{
-	font-size: 20px;
+	padding-left:10px;
+}
+@media screen and (min-width: 768px){
+.header{
+	padding:20px;
+}
+.header h1.site-title, .header .nav h3{
+	font-size: 20px !important;
+}
+.nav h3{
 	padding-left:15px;
+}
 }
 .nav a, .nav a:visited{
 	color:#666;
