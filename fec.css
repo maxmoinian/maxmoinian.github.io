@@ -28,6 +28,16 @@
 a:hover{
 	text-decoration:none;
 }
+@font-face{
+	font-family: 'Windsor';
+	src: url('Windsor-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+h1,h2,h3,h4{
+	font-family: 'Windsor', serif;
+}
+
 
 .header{
 	position:fixed;
@@ -41,8 +51,14 @@ a:hover{
 }
 .site-title{
 	display:inline;
-	color:#333;
 	font-size: 20px;
+}
+a .site-title{
+		color:#333;
+
+}
+a:hover .site-title{
+	color:#666;
 }
 .nav{
 	float:right;
@@ -51,14 +67,21 @@ a:hover{
 	font-size: 20px;
 	padding-left:15px;
 }
-.nav-selected{
-	opacity: .7;
+.nav a, .nav a:visited{
+	color:#666;
 }
+.nav a:hover{
+	color:#aaa;
+}
+.nav a:active{
+	color:#333;
+}
+
 
 
 /*BOOK*/
 .main{
-	margin-top:150px;
+	margin-top:75px;
 }
 .main img{
 	padding-bottom:30px;
@@ -68,6 +91,7 @@ a:hover{
 	height:calc(100vh - 75px);
 	width:auto;
 	margin-top:75px;
+	margin-left: 66px;
 }
 
 /*FOOTER*/
