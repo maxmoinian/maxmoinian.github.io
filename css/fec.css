@@ -52,10 +52,15 @@ h1,h2,h3,h4{
 	top:0;
 	left:0;
 	background:#fff;
-	height:75px;
+	height:60px;
 	width:100%;
 	padding:20px 0px;
 	z-index:100;
+}
+@media screen and (min-width: 768px){
+	.header{
+		height:70px;
+	}
 }
 .nav{
 	float:right;
@@ -116,9 +121,36 @@ a:hover .site-title{
 
 /*TIMELINE*/
 .timeline-container img{
-	height:calc(100vh - 75px);
+	height:calc(100vh - 60px);
 	width:auto;
-	margin-top:75px;
+	margin-top:60px;
+	margin-right:20vw;
+	margin-left: 30vw;
+	z-index: 50;
+	cursor: zoom-in;
+}
+
+.scroll-message {
+	width:20vw;
+	position: fixed;
+	top:50vh;
+	left:5vw;
+	z-index: -10;
+}
+.scroll-message h4 {
+	color:#222;
+	font-size: 20px;
+}
+
+@media screen and (min-width: 768px){
+	.timeline-container img{
+		height:calc(100vh - 70px);
+		margin-top:70px;
+	}
+}
+.tl-zoom {
+	height:100% !important;
+	cursor: zoom-out !important;
 }
 
 /*FOOTER*/

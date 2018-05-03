@@ -15,7 +15,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="fec.css" rel="stylesheet">
+    <link href="css/fec.css" rel="stylesheet">
+    <link href="css/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnify.css">
+
+        <!-- Timeline Style -->
+    <style>html{overflow: hidden;width: 100%;}body{background:#fff;width: 100%;overflow: auto;}</style>
   </head>
   <body>
     <div class='header'>
@@ -31,6 +36,9 @@
     <div class='timeline-container'>
      <img src='img/timeline-lg.jpg'>
     </div>
+    <div class='scroll-message'>
+      <h4 class='text-center'>Scroll to read timeline<br>⟶</h4>
+    </div>
     
     <!--<footer class="footer">
       <div class="container text-center">
@@ -39,5 +47,30 @@
     </footer>-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='js/horiz-scroll.js'></script>
+<script type="text/javascript">
+      $(function() {
+        
+          $("html, body, *").on('mousewheel',function(event, delta, deltaX, deltaY) {
+        if(!$(".timeline-container img").hasClass("tl-zoom")){
+    event.preventDefault();
+
+    //use whichever component (deltaX or deltaY) that has the largest absolute value
+    // deltaX needs negated to have natural scroll motion
+    var singleDelta = (Math.abs(deltaX)>Math.abs(deltaY)) ? (-1 * deltaX) : deltaY;
+
+    this.scrollLeft-= (singleDelta * 30);
+  }
+});
+      });
+      
+      var tl = $(".timeline-container img");
+
+      $(function() {
+        tl.on('click',function() {
+          $(this).toggleClass("tl-zoom")
+        });
+      });
+    </script>
   </body>
   </html>
