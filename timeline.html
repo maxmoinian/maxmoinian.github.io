@@ -52,7 +52,7 @@
       $(function() {
         
           $("html, body, *").on('mousewheel',function(event, delta, deltaX, deltaY) {
-        if(!$(".timeline-container img").hasClass("tl-zoom")){
+        if(!$(".timeline-container img").hasClass("tl-zoom") && navigator.userAgent.indexOf('Chrome') > -1 || navigator.userAgent.indexOf('Firefox') > -1){
     event.preventDefault();
 
     //use whichever component (deltaX or deltaY) that has the largest absolute value
