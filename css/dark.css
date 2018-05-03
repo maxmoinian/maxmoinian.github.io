@@ -1,16 +1,22 @@
+/*
 body {
 	background:#1a1a1a;
 }
 h1,h2,h3,h4,p{
 	color:#fffacc;
 }
+*/
 .header{
 	background:#1a1a1a;
 }
+footer{
+	background:#1a1a1a;
+	padding-top: 10px;
+	color:#fffacc;
+}
 
-a .site-title{
+a .site-title, a h3{
 		color:#fffacc;
-
 }
 
 a:hover .site-title, a:hover h3{

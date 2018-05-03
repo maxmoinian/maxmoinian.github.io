@@ -110,7 +110,10 @@ a:hover .site-title{
 
 /*BOOK*/
 .main{
-	margin-top:75px;
+	margin-top:70px;
+}
+.book-intro{
+	margin-top: 50px;
 }
 .main .issuuembed{
 	margin-bottom:35px;
@@ -169,11 +172,9 @@ a:hover .site-title{
 /*FOOTER*/
 footer{
 	flex-shrink: 0;
+	margin-top: 50px;
 }
 .main {
   flex: 1 0 auto;
-}
-.footer {
-
 }
 
